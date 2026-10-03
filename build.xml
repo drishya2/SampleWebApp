@@ -61,6 +61,10 @@
                 <arg file="${dist.jar}"/>
             </exec>
         </target>
+                <target name="checkstyle" depends="dist">
+                </target>
+
+        
 
     Notice that overridden target depends on jar target and not only on 
     compile target as regular run target does. Again, for list of available 
